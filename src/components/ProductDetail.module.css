@@ -1,0 +1,260 @@
+.productdetailmaincont {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+}
+
+.productdetailuppercont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.productdetailuppercont img {
+    /* width: 80%;
+    height: 80%; */
+}
+
+.productdetailuppercontleft {
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgb(236, 236, 237);
+    width: 100%;
+}
+
+
+
+.productdetailuppercontright {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.productdetailuppercontright h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 0.9;
+}
+
+
+.review {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.price {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 0.5;
+}
+
+.desc {
+    color: rgb(19, 23, 34);
+    width: 70%;
+}
+
+.quantitymaincont {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.quantitycont {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 7px;
+    overflow: hidden;
+    padding: 0px 10px;
+    font-weight: 600;
+}
+
+.quantitycont select {
+    padding: 7px 20px;
+    width: 65px;
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+
+.quantitycont button {
+    padding: 5px 12px;
+    background-color: white;
+    border: none;
+    outline: none;
+    font-size: 19px;
+}
+
+.quantitycont p {
+    border-left: 1px solid rgb(236, 236, 237);
+    border-right: 1px solid rgb(236, 236, 237);
+    padding: 5px 18px;
+    height: 100%;
+}
+
+
+.btncont {
+    display: flex;
+    gap: 10px;
+}
+
+.addtocartbtn {
+    padding: 10px 45px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: rgb(254, 100, 1);
+    color: white;
+}
+
+.buynowbtn {
+    padding: 10px 45px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(208, 209, 214);
+}
+
+
+
+
+.productdetailmiddlecont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border: 1px solid rgb(236, 236, 237);
+    border-radius: 10px;
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.productdetailmiddlecont h2 {
+    font-size: 1rem;
+}
+
+.productdetailmiddlecont p {
+    font-size: 12 px;
+}
+
+.productmiddlecontdivs {
+    flex: 1;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    width: 100%;
+}
+
+.productmiddlecontdivs div {}
+
+.sevendaydiv {
+    border-left: 1px solid rgb(236, 236, 237);
+    border-right: 1px solid rgb(236, 236, 237);
+}
+
+.productdetaillowercont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0px 0px 0px;
+}
+
+.relatedproductsCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+
+}
+
+
+@media (max-width:876px) {
+    .productdetailuppercont {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+@media (max-width:662px) {
+
+    .productdetailuppercontright h1 {
+        font-size: 2.2rem;
+    }
+
+    .price {
+        font-size: 2.5rem;
+    }
+
+    .desc {
+        width: 100%;
+    }
+
+    .relatedproductsCont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+
+    }
+
+    .productdetailmiddlecont h2 {
+        font-size: 14px;
+    }
+
+    .productdetailmiddlecont p {
+        font-size: 10px;
+    }
+
+
+}
+
+@media (max-width:534px) {
+
+    .productdetailmiddlecont {
+        padding: 10px;
+    }
+
+
+}
+
+
+@media (max-width:486px) {
+
+    .productdetailmiddlecont {
+        padding: 5px;
+    }
+
+    .productdetailmiddlecont h2 {
+        font-size: 12px;
+    }
+
+    .productdetailmiddlecont p {
+        font-size: 10px;
+    }
+
+
+    .addtocartbtn , .buynowbtn {
+        padding: 10px 25px;
+    }
+
+
+
+}
+
+
+@media (max-width:392px) {
+
+    .relatedproductsCont {
+        grid-template-columns: 1fr;
+
+
+    }
+}

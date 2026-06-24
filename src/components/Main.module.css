@@ -1,0 +1,32 @@
+.categoriesmaincont {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    gap: 10px;
+}
+
+.categoriesmaincont h2 {
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.categoriescont {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* background-color: yellowgreen; */
+    gap: 20px;
+    overflow: hidden;
+}
+
+@media(max-width:996px){
+    .categoriescont{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+@media(max-width:511px){
+    .categoriescont{
+        grid-template-columns: 1fr 1fr  ;
+    }
+}
