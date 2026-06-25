@@ -36,6 +36,15 @@ display:flex;
 flex-direction:column;
 gap:10px;
 
+@media(max-width:655px){
+padding:20px;
+}
+
+@media(max-width:475px){
+padding:20px 10px;
+}
+
+
 h2{
 letter-spacing: 1px; 
 font-size: 1.1rem;
@@ -51,6 +60,13 @@ gap:15px;
 grid-template-columns: 1fr 1fr 1fr  ;
 }
 }
+
+@media (max-width:344px){
+.trendingproductscont{
+grid-template-columns: 1fr 1fr;
+}
+}
+
 
 
 `

@@ -5,6 +5,18 @@
     padding: 20px 40px;
 }
 
+@media(max-width:655px) {
+    .flashsaleoutercont {
+        padding: 20px;
+    }
+}
+
+@media(max-width:475px) {
+    .flashsaleoutercont {
+        padding: 20px 10px;
+    }
+}
+
 .flashsaleinnercont {
     width: 100%;
     height: 100%;
@@ -67,6 +79,6 @@
 @media (max-width:595px) {
 
     .flashsaleinnercontright {
-    grid-template-columns: 1fr 1fr ;
-}
+        grid-template-columns: 1fr 1fr;
+    }
 }

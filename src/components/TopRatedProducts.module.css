@@ -6,6 +6,19 @@
     gap: 10px;
 }
 
+
+@media(max-width:655px){
+.trendingproductsoutercont {
+    padding: 20px;
+}
+}
+
+@media(max-width:475px){
+.trendingproductsoutercont {
+    padding: 20px 10px;
+}
+}
+
 .trendingproductsgridcont {
     width: 100%;
     display: grid;

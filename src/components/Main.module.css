@@ -5,6 +5,19 @@
     gap: 10px;
 }
 
+@media(max-width:655px) {
+    .categoriesmaincont {
+        padding: 20px;
+    }
+}
+
+@media(max-width:475px) {
+    .categoriesmaincont {
+        padding: 20px 10px;
+    }
+}
+
+
 .categoriesmaincont h2 {
     letter-spacing: 1px;
     font-size: 1.1rem;
@@ -19,14 +32,14 @@
     overflow: hidden;
 }
 
-@media(max-width:996px){
-    .categoriescont{
-        grid-template-columns: 1fr 1fr 1fr ;
+@media(max-width:996px) {
+    .categoriescont {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media(max-width:511px){
-    .categoriescont{
-        grid-template-columns: 1fr 1fr  ;
+@media(max-width:511px) {
+    .categoriescont {
+        grid-template-columns: 1fr 1fr;
     }
 }
