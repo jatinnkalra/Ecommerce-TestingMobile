@@ -35,6 +35,7 @@ function Categories(props) {
     };
     const [categories, setCategories] = useState([])
     useEffect(() => {
+        window.scrollTo(0, 0);
         fetch('https://dummyjson.com/products/categories')
             .then((res) => res.json())
             .then((data) => setCategories(data))

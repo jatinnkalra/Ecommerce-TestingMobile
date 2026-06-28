@@ -13,6 +13,7 @@ function ParticularCategoryPage(props) {
     const categoryUrl = `https://dummyjson.com/products/category/${categoryname}`
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         fetch(categoryUrl)
             .then((res) => res.json())
             .then((data) => {
