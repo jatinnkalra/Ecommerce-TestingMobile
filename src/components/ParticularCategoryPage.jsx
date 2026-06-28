@@ -19,7 +19,7 @@ function ParticularCategoryPage(props) {
             .then((data) => {
                 setCategoryData(data.products)
             })
-    },)
+    },[])
     return (
         <>
             <Navbar cart={props.cart} />
