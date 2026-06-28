@@ -53,9 +53,7 @@
     border: none;
     outline: none;
     background-color: transparent;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    color: black;
 }
 
 .inputcont input {
