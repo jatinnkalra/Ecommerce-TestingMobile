@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 function Category(props) {
     return (
-        <CONTAINER>
+        <CONTAINER onClick={props.onClick}>
             <img src={props.src} alt="" width="100%" />
             <h3>{props.name}</h3>
         </CONTAINER>

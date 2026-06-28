@@ -23,7 +23,9 @@ function FlashSale(props) {
                     <div className={styles.flashsaleinnercontlefttxtdiv}>
                         <h3>FLASH SALE</h3>
                         <p>Limited time offer, Grab it now!</p>
-                        <button>Shop Now</button>
+                        <button onClick = {()=>{
+                            navigate('/shop')
+                        }}>Shop Now</button>
                     </div>
                 </div>
                 <div className={styles.flashsaleinnercontright}>
@@ -40,7 +42,7 @@ function FlashSale(props) {
                                 navigate(`/product-detail/${product.id}`)
                             }}
                             cart={props.cart} setCart={props.setCart} id={product.id}
-                            quantity = {1}
+                            quantity={1}
                         />
                     ))}
                 </div>

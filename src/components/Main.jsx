@@ -5,8 +5,9 @@ import TrendingProducts from './TrendingProducts.jsx';
 import FlashSale from './FlashSale.jsx'
 import TopRatedProducts from './TopRatedProducts.jsx'
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 function Main(props) {
-
+    const navigate = useNavigate()
     const categoryImages = {
         beauty: "/Images/beauty.jpg",
         fragrances: "/Images/fragnance.jpg",
@@ -35,6 +36,9 @@ function Main(props) {
                             key={category.slug}
                             src={categoryImages[category.slug]}
                             name={category.name}
+                            onClick = {()=>{
+                                navigate(`/category/${category.slug}`)
+                            }}
                         />
                     ))}
                 </div>

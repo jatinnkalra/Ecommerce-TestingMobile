@@ -1,8 +1,10 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import styles from './Cart.module.css'
+import { useNavigate } from "react-router-dom";
 
 function Cart(props) {
+    const navigate = useNavigate();
     return (
         <>
             <Navbar cart={props.cart} />
@@ -50,17 +52,17 @@ function Cart(props) {
                                                 return prev.map((item) => {
                                                     if (item.id === cartItem.id) {
 
-                                                        if(item.quantity === 10){
+                                                        if (item.quantity === 10) {
                                                             alert("Max quantity for an item is 10")
                                                         }
 
-                                                        if (item.quantity<10) {
+                                                        if (item.quantity < 10) {
                                                             return {
                                                                 ...item,
                                                                 quantity: item.quantity + 1
                                                             }
                                                         }
-                                                        
+
                                                     }
                                                     return item
                                                 })
@@ -79,7 +81,11 @@ function Cart(props) {
                         })
                     }
                 </section>
-                <div></div>
+                <div className={styles.cartplaceordercont}>
+                    {props.cart.length > 0 && <button onClick={() => {
+                        navigate('/categories')
+                    }} className={styles.placeorderbtn}>Place Order</button>}
+                </div>
             </main>
             <Footer />
         </>

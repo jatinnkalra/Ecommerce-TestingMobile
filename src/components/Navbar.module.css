@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /* background-color: violet; */
 }
 
 .hamburger {
@@ -15,7 +14,7 @@
 
 .headercont img {
     width: 100px;
-    /* height: 50px; */
+    cursor: pointer;
 }
 
 .headercontupper {
@@ -28,51 +27,51 @@
     flex-wrap: wrap;
 }
 
-
-
 .logoandh1cont {
     display: flex;
     align-items: center;
-    /* background-color: yellowgreen; */
 }
 
 .inputcont {
     flex: 1;
     display: flex;
-    /* border: 2px solid red; */
-    /* background-color: rgb(5, 124, 85); */
+    align-items: center;
+    height: 42px;
+    border: 1px solid rgb(218, 218, 218);
     border-radius: 10px;
     overflow: hidden;
-    border: 1px solid rgb(218, 218, 218);
-    /* background-color: aqua; */
     max-width: 700px;
     min-width: 290px;
+    background: white;
 }
 
 .inputcont select {
-    outline: none;
-    border: none;
     width: 10%;
-    /* border: 1px solid rgb(218, 218, 218); */
-    padding: 5px 5px 5px 10px;
     min-width: 60px;
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .inputcont input {
-    width: 80%;
-    height: 40px;
-    outline: none;
+    flex: 1;
+    height: 100%;
     border: none;
-    /* border: 1px solid rgb(218, 218, 218); */
-    padding: 5px 5px 5px 10px;
+    outline: none;
+    padding: 0 10px;
+    background-color: transparent;
 }
 
 .inputcont svg {
-    width: 30px;
-    padding: 5px;
-    /* background-color: rgb(218, 218, 218); */
-    height: 40px;
-    min-width: 30px;
+    width: 40px;
+    height: 100%;
+    padding: 8px;
+    flex-shrink: 0;
 }
 
 .cartandlogincont {
@@ -99,10 +98,8 @@
     padding: 4px 7px;
     border-radius: 50%;
     color: white;
-    font-weight: 900;
     font-size: 11px;
     font-weight: 900;
-    color: white;
 }
 
 .cartandlogincont a {
@@ -112,8 +109,6 @@
     align-items: center;
     gap: 2px;
 }
-
-
 
 .navcont {
     display: flex;
@@ -141,13 +136,10 @@
         width: 70%;
     }
 
-
     .cartandlogincont {
         order: 2;
     }
-
 }
-
 
 @media (max-width:655px) {
     .navcont {
@@ -167,7 +159,7 @@
     }
 }
 
-@media(max-width:475px) {
+@media (max-width:475px) {
     .headercont {
         padding: 10px;
     }
@@ -177,16 +169,12 @@
     }
 }
 
-@media(max-width:411px) {
+@media (max-width:411px) {
     .hamburger {
         width: 20px;
     }
 
-    .cartandlogincont Link {
-        background-color: yellow;
-    }
-
-    .cartlinks {
+    .cartandlogincont a {
         font-size: 12px;
     }
 }
@@ -196,26 +184,23 @@
     height: 100%;
     padding: 20px;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    gap: 5px;
     display: none;
+    flex-direction: column;
+    gap: 5px;
     position: fixed;
-    top: 0px;
+    top: 0;
     left: 0;
     z-index: 1000;
-    
 }
 
 .hamburgerlinks div {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
     align-items: center;
+    margin-bottom: 10px;
 }
 
-.hamburgerlinks img{
+.hamburgerlinks img {
     width: 130px;
     height: 60px;
     margin-left: -28px;
@@ -225,13 +210,11 @@
     display: flex;
 }
 
-
-
 .hamburgerlinktags {
-    text-decoration: none;
-    color: black;
     width: 200px;
     padding: 10px;
+    color: black;
+    text-decoration: none;
     border: 1px solid rgb(218, 218, 218);
     border-radius: 10px;
 }
@@ -242,9 +225,6 @@
 
 .overlay {
     position: fixed;
-    top: 0px;
-    height: 100%;
-    width: 100%;
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 998;

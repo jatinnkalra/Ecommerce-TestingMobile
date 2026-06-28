@@ -1,4 +1,5 @@
 import styles from './Footer.module.css'
+import {Link} from 'react-router-dom'
 function Footer() {
     return (
         <footer className={styles.footercont}>
@@ -40,12 +41,11 @@ function Footer() {
                 <div className={styles.footermiddlesecondcont}>
                     <p>Quick Links</p>
                     <div className={styles.footeracont}>
-                        <a href="">Home</a>
-                        <a href="">Shop</a>
-                        <a href="">Categories</a>
-                        <a href="">Deals</a>
-                        <a href="">About Us</a>
-                        <a href="">Contact Us</a>
+                        <Link to="/">Home</Link>
+                        <Link to="/shop">Shop</Link>
+                        <Link to="/categories">Categories</Link>
+                        <Link to="">About Us</Link>
+                        <Link to="">Contact Us</Link>
                     </div>
                 </div>
                 <div className={styles.footermiddlethirdcont}>
@@ -56,18 +56,17 @@ function Footer() {
                         <a href="">Returns</a>
                         <a href="">Shipping</a>
                         <a href="">FAQ's</a>
-                        <a href="">Privacy Policy</a>
                     </div>
                 </div>
                 <div className={styles.footermiddlefourthcont}>
                     <p>Categories</p>
                     <div className={styles.footeracont}>
-                        <a href="">Electronics</a>
-                        <a href="">Fashion</a>
-                        <a href="">Furniture</a>
-                        <a href="">Beauty</a>
-                        <a href="">Groceries</a>
-                        <a href="">View All</a>
+                        <Link to="/category/laptops">Laptops</Link>
+                        <Link to="/category/home-decoration">Home Decoration</Link>
+                        <Link to="/category/furniture">Furniture</Link>
+                        <Link to="/category/beauty">Beauty</Link>
+                        <Link to="/category/groceries">Groceries</Link>
+                        <Link to="/shop">View All</Link>
                     </div>
                 </div>
             </div>
